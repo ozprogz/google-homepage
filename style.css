@@ -1,3 +1,131 @@
 body{
     background-color: white;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    margin:0px;
+    padding:0px;
 }
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    flex-shrink:0;
+    box-sizing: border-box;
+    
+}
+a.about {
+    margin-left:15px !important;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color:#222;
+}
+
+a.store {
+    
+    display: inline-block;
+    padding: 5px;
+    color:#222;
+    margin: 0 5px;
+}
+a.gmail {
+    
+    display: inline-block;
+    padding: 5px;
+    color:#222;
+    margin: 0 3.5px;
+    font-size: 13px;
+
+}
+a.images {
+    
+    display: inline-block;
+    padding: 4px;
+    color:#222;
+    margin: 0 3.5px;
+    font-size: 13px;
+
+}
+a.gapps {
+    
+    display: inline-block;
+    padding: 5px;
+    color:#222;
+    margin: 0 3.5px;
+    font-size: 13px;
+    opacity: 1;
+
+}
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+/*
+div{
+    border-color: red;
+    border-style: groove;
+}
+*/
+.container{
+    display: inline-block;
+    flex-grow:1;
+
+
+}
+.rightcontainer{
+    min-width: auto;
+    height: 48px;
+    position: relative;
+    transition: box-shadow 250ms;
+    z-index: 986;
+    float:right;
+    padding-left: 32px;
+    line-height: normal;
+    box-sizing: border-box;
+    padding: 0 4px;
+    justify-content: flex-end;
+    display:flex;
+    align-items: center;
+}
+
+
+[aria-label]:after {
+    content: attr(aria-label);
+    display: none;
+    position: absolute;
+    top: 100%;
+    left:45%;
+    z-index: 5000;
+    pointer-events: none;
+    padding: 8px 8px;
+    line-height: 10px;
+    white-space: nowrap;
+    text-decoration: none;
+    text-indent: 0;
+    overflow: visible;
+    font-size: 13px;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 1px 0 1px #888;
+    background-color: #4d4b4b;
+    -webkit-border-radius: 2px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
+    box-shadow: 1px 2px 6px rgba(0,0,0,0.3);
+    transition: box-shadow 1s ease-in-out;
+    }
+
+    a:focus {
+        outline:1px dashed #E92C6C;
+      }
+      
+      [aria-label]:hover:after, [aria-label]:focus:after {
+      display: block;
+      
+      }
