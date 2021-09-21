@@ -1,9 +1,16 @@
+
+html{
+    height: 100%;
+}
+
 body{
     background-color: white;
     font-size: 14px;
     font-family: arial, sans-serif;
     margin:0px;
     padding:0px;
+    height: 100%;
+    
 }
 .header{
     height: 60px;
@@ -99,12 +106,6 @@ a:hover{
 }
 
 
-/*
-div{
-    border-color: red;
-    border-style: groove;
-}
-*/
 .container{
     display: inline-block;
     flex-grow:1;
@@ -154,10 +155,7 @@ div{
     transition: box-shadow 1s ease-in-out;
     }
 
-    a:focus {
-        outline:1px dashed #E92C6C;
-      }
-      
+    
       [aria-label]:hover:after, [aria-label]:focus:after {
       display: block;
       
@@ -184,3 +182,140 @@ div{
     a.github:hover .tooltiptext {
         visibility: visible;
       }
+
+
+    .google{
+        display: flex;
+        align-items: center;
+        height: calc(100% - 560px);
+        min-height: 92px;
+        max-height: 290px;
+        flex-direction: column;
+        box-sizing: border-box;
+        
+    }
+.googleImage{
+    object-position: center bottom;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    margin-top:auto;
+    
+}
+    .searchbarbox{
+        max-height: 160px;
+        padding:26px 20px 20px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap;
+
+        
+    
+    }
+    hr{
+        flex-basis: 100%;
+        height: 0;
+        margin: 30px 0 0 0;
+        border: none;
+    }
+    .searchbarbox hr{
+        width: 100%;
+    }
+input{
+    background-color: transparent;
+    border:none;
+    width: 90%;
+
+}
+input:focus{
+    outline: none;
+}
+
+
+.box{
+    display: flex;
+    max-width: 584px;
+    flex-grow:1;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height:44px;
+    justify-content: start;
+    align-items: center;
+        
+}
+.box:hover{
+    box-shadow: 0 0 4px rgba(33,33,33,0.2);
+}
+.magnifier{
+    margin: 9px 9px 9px 14px;
+}
+
+button {
+    height: 36px;
+    text-align: center;
+    min-width: 54px;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    color: #3c4043;
+    font-size:14px;
+    font-family:arial, sans-serif;
+    padding: 0 16px;
+    line-height: 27px;
+    margin: 0 4px 0 4px;
+}
+button:focus{
+    border-color: blue;
+}
+
+button:hover{
+    border-color: gray;
+}
+
+p{
+    text-align: center;
+    font-size:13px;
+    line-height: 6px;
+}
+
+.bottom{
+    background-color: #f2f2f2;
+    position: absolute;
+    left:0;
+    bottom: 0;
+    right:0;
+    
+    
+}
+
+.language{
+    font-size:15px;
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    color: rgba(0,0,0,.54);
+}
+
+.bottoms{
+    font-size:14px;
+    color: rgba(0,0,0,.54);
+    padding:15px;
+    display: inline-block;
+    white-space: nowrap;
+    font-family: arial, sans-serif;
+    
+}
+
+.bottomElements{
+    padding: 0 20px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+.tab
+{
+    margin-left: 0.2em;
+}
+
